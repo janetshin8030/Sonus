@@ -4,7 +4,7 @@ This repository contains an open-source implementation of Full Waveform Inversio
 
 ## Project Overview
 
-FWI is traditionally used in geophysical exploration, but its high-resolution capabilities also hold promise in medical imaging. We applied FWI to model MNI152 NIfTI brain (MNI152 T1 template from nilearn). We start with a known skull model. This allows us to refine imaging accuracy and performance in a simpler anatomical model before advancing to skull imaging. 
+FWI is traditionally used in geophysical exploration, but its high-resolution capabilities also hold promise in medical imaging. Originally we were using stride and the MIDA Head Model, however, due to limited cluster compute, we then used j-wave. We applied FWI to model MNI152 NIfTI brain (MNI152 T1 template from nilearn). We start with a known skull model. This allows us to refine imaging accuracy and performance in a simpler anatomical model before advancing to skull imaging. 
 
 ## Setup
 2D Scan
