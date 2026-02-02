@@ -6,10 +6,17 @@ This repository contains an open-source implementation of Full Waveform Inversio
 
 FWI is traditionally used in geophysical exploration, but its high-resolution capabilities also hold promise in medical imaging. We applied FWI to model MNI152 NIfTI brain (MNI152 T1 template from nilearn). We start with a known skull model. This allows us to refine imaging accuracy and performance in a simpler anatomical model before advancing to skull imaging. 
 
+## Setup
+2D Scan
+Number of Transducers: 64
+Batches of simulations (each batch is running all transducers one by one in a circular direction): 20
+
+
 ## Tech Stack
 - **j-Wave**: Differentiable acoustic simulation framework.
 - **JAX**: High-performance numerical computing with function tracing and Autodiff.
 - **NFTIT Model**: Professional-grade 3D numerical head template for ultrasound research.
+- **Google Colab**: Created as a Google Colab and ran on Colab A100 GPU
 
 Please feel free to refine or develop new code! 
 
