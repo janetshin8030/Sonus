@@ -4,12 +4,12 @@ This repository contains an open-source implementation of Full Waveform Inversio
 
 ## Project Overview
 
-FWI is traditionally used in geophysical exploration, but its high-resolution capabilities also hold promise in medical imaging. We applied FWI to model soft tissue imaging first, starting with breast tissue as a foundation. This allows us to refine imaging accuracy and performance in a simpler anatomical model before advancing to brain imaging using the MIDA (Montreal Imaging Dataset of the Head) model, which provides a realistic head anatomy for neuroimaging research.
+FWI is traditionally used in geophysical exploration, but its high-resolution capabilities also hold promise in medical imaging. We applied FWI to model MNI152 NIfTI brain (MNI152 T1 template from nilearn). We start with a known skull model. This allows us to refine imaging accuracy and performance in a simpler anatomical model before advancing to skull imaging. 
 
-The project currently includes:
-- **Data Simulation**: Generating synthetic datasets for FWI in soft tissue.
-- **Model Setup**: Building and testing FWI models on breast tissue data.
-- **FWI Implementation**: Running FWI algorithms to reconstruct detailed internal images.
+## Tech Stack
+- **j-Wave**: Differentiable acoustic simulation framework.
+- **JAX**: High-performance numerical computing with function tracing and Autodiff.
+- **NFTIT Model**: Professional-grade 3D numerical head template for ultrasound research.
 
-In the next phase, we will adapt this framework for accelerated GPU usage for the MIDA head model.
+Please feel free to refine or develop new code! 
 
